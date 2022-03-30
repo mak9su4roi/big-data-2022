@@ -26,3 +26,6 @@
 -   ```bash
     docker run lab_01
     ```
+
+### Result
+![](./media/l01_result.png)
