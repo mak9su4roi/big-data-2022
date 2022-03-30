@@ -28,4 +28,4 @@
     ```
 
 ### Result
-![](./media/l01_result.png)
+![result](./media/l01_result.png)
