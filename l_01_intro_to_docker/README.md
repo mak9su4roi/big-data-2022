@@ -11,7 +11,7 @@
     git clone https://github.com/mak9su4roi/big-data-2022
     ```
 -   ```bash
-    cd l_01_intro_to_docker
+    cd ./big-data-2022/l_01_intro_to_docker
     ```
 -   ```bash
     chmod +x build.sh
