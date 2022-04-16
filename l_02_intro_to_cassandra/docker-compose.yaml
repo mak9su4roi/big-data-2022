@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  n1:
+    image: cassandra:latest
+    environment:
+      - CASSANDRA_SEEDS=n1,n2,n3
+
+  n2:
+    extends: n1
+
+  n3:
+    extends: n1
