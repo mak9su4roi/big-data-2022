@@ -10,9 +10,6 @@
     git clone https://github.com/mak9su4roi/big-data-2022
     ```
 -   ```bash
-    chmod -R +x ./big-data-2022/l_03_cassandra_data_modeling
-    ```
--   ```bash
     cd ./big-data-2022/l_03_cassandra_data_modeling
     ```
 
