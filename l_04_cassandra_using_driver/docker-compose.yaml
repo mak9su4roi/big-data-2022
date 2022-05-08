@@ -1,0 +1,38 @@
+version: "3.9"
+
+services:
+  node:
+    build: node
+    environment:
+      - HEAP_NEWSIZE=1024M
+      - MAX_HEAP_SIZE=2048M
+    ports:
+      - 9042:9042
+
+  api:
+    build: api
+    depends_on:  
+      - loader
+    volumes:
+      - ./api.py:/usr/src/api.py:ro
+      - ./common:/usr/src/common
+    ports:
+      - 8080:8080
+    environment:
+      - C_NODE=node
+      - C_PORT=9042
+      - C_KEYSPACE=l_04
+  
+  loader:
+    build: loader
+    depends_on:
+      - node
+    volumes:
+      - ./loader.py:/usr/src/loader.py:ro
+      - ./${DATASET}.tsv:/usr/src/data.tsv:ro
+      - ./common:/usr/src/common
+    environment:
+      - C_NODE=node
+      - C_PORT=9042
+      - C_KEYSPACE=l_04
+    command: ["data.tsv"]
