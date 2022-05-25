@@ -1,4 +1,4 @@
-# Lab II: Introduction to cassandra
+# Lab V: Introduction to kafka
 
 
 ### Requirements
