@@ -5,7 +5,7 @@
 - `docker`
 - `docker-compose`
 - `jq` -- for beatiful json output 
-- twitts to stream: `l_08_cassandra_and_kafka/PS_20174392719_1491204439457_log.csv`
+- transactions to stream: `l_08_cassandra_and_kafka/PS_20174392719_1491204439457_log.csv`
 
 ### Setup
 -   ```bash
