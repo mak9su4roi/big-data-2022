@@ -5,4 +5,4 @@ COPY requirements.txt ./requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 COPY producer.py ./producer.py
 
-ENTRYPOINT [ "bash", "producer.py", "10000000", "30" ]
+ENTRYPOINT [ "python3", "producer.py", "10000000", "30" ]
