@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  spark:
+    image: bitnami/spark:3.2.1
+    env_file:
+      - .env.master
+    depends_on:
+      - spark-worker
+
+  spark-worker:
+    image: bitnami/spark:3.2.1
+    env_file:
+      - .env.worker
+    volumes:
+      - ./:/opt/app/:ro
