@@ -20,7 +20,6 @@
 ### Instructions
 -   Create cluster
     ```bash
-    docker-compose ps
     ./run-cluster.sh
     ```
 -   Run producer & consumer
